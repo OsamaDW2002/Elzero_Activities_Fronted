@@ -1,0 +1,7 @@
+.outline_lec{
+    /*Its like the border but it isnt belong to the element */
+    /*Overall dont use it it is not important in most cases*/
+
+    outline:10px solid blue;
+}
+

@@ -1,0 +1,23 @@
+/*Padding doesn't accept a negative values*/
+.padding_lec{
+    /*
+    clockwise
+             Top Right Bottom Left
+    */
+    padding: 10px 3px 5px 20px;
+
+    /*
+    10px Top Bottom  the top and the other side (bottom)
+    20px Right Left  the right and the other side (left)
+    */
+    padding: 10px 20px;
+
+
+    /*
+    10px Top
+    20px Bottom
+    15px Left and Right
+    */
+    padding: 10px 20px 15px;
+
+}

@@ -1,0 +1,21 @@
+.margin_lec{
+    margin-top:-50px ; /* it start position out of the site  */
+
+    /*
+    it means :-
+    the width took the first 80% from the container and we want the width at the center so
+    we make a margin left and right each one 10%
+
+    Ok if someone from the team changes the width without the margin he will ruin the site what we can do to prevent that ?
+    actually we can mak the margin on auto so it put the margin dynamically with the width
+    */
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+
+    /* Or */
+    margin: auto;
+
+
+
+}

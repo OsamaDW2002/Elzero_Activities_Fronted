@@ -1,0 +1,25 @@
+.background_lec{
+    background-color: red ;
+    background-color: rgb(0 0 0 / 50%);
+    background-color: #a0a0a0;
+    background-image:url("Gumball.jpg") ;
+    background-repeat: no-repeat;
+
+
+    /*background-attachment:scroll ; default one*/
+    /*background-attachment: fixed ;*/
+
+
+    /*background-position: 100px 50px; !*100 pixel from left and 50 px start from top *!*/
+    /*background-position: 100% 50%; !*100 % from left and 50 % start from top *!*/
+
+
+
+    /*background-size: auto;  !* default value size same as the orginal size*!*/
+    /*background-size: cover;  !*image cover all the background with clip*!*/
+    /*background-size: contain; !*image fully visible*!*/
+    /*background-size: 100px 200px; !*width and hieght*!*/
+    background-size: 30% 50% ;
+    
+
+}

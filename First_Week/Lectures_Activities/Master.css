@@ -1,0 +1,15 @@
+/*Target All Paragraph*/
+p{
+    color: darkgray;
+    font-size: 50px;
+}
+.special{
+    color: aqua;
+}
+
+#special{
+    color: blue;
+}
+p{
+    color: chocolate;
+}
