@@ -1,0 +1,13 @@
+.display_and_visibility_lec{
+
+}
+div{
+    background: red;
+    margin: 10px 0;
+
+    /*To make the element invisible*/
+    display: none; /*يعتبر غير موجود بالصفحه(يعني حتى مكانو ببطل محجوز وبيجي عنصر تاني يحل محلو لو في عناصر غير)*/
+    visibility: hidden; /*يعتبر موجود بالصفحه(يعني مكانو بضل محجوز و ما بيجي عنصر تاني (ممنوع) يحل محلو لو في عناصر غير) تخفي العنصر لكن يحتفظ بمكانو*/
+    
+    visibility: visible;/*default*/
+}
