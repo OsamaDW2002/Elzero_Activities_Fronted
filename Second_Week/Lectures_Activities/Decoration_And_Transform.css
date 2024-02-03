@@ -1,0 +1,21 @@
+/*
+*Text Decoration
+*Text Transformation
+*/
+div{
+    background-color: #f9f9f9;
+    text-decoration: line-through red;
+    text-transform: uppercase;
+}
+a{
+    color: white;
+    background-color: darkgray;
+    width: 70px;
+    height: 90px;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 30px;
+    text-decoration: none;
+}
