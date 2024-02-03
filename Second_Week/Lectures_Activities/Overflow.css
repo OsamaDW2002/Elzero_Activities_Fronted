@@ -1,0 +1,12 @@
+div{
+    background-color: #EEEEEE;
+    width: 200px;
+    height: 100px;
+
+    /*overflow: hidden;*/
+    /*overflow: scroll;*/
+    /*overflow-x: auto;*/
+    /*overflow-y:auto ;*/
+    overflow: auto; /* if the text is overflow then it puts the scroll sign else the scroll sign invisible */
+
+}
