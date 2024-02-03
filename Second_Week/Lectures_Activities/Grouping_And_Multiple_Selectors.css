@@ -1,0 +1,35 @@
+.one{
+    padding: 10px;
+    border-bottom:1px solid red;
+    color: red;
+    margin : 10px 0;
+    background: #EEEE;
+}
+.two{
+    padding: 10px;
+    border-bottom:1px solid green;
+    color: green;
+    margin : 10px 0;
+    background: #EEEE;
+}
+.three{
+     padding: 10px;
+     border-bottom:1px solid blue;
+     color: blue;
+     margin : 10px 0;
+     background: #EEEE;
+ }
+.four{
+    padding: 10px;
+    border-bottom:1px solid black;
+    color: black;
+    margin : 10px 0;
+    background: #EEEE;
+}
+/* there is a common instructions between the classes so we group it to make the editing easier in the future */
+.one , .three , .two , .four , p{
+    padding: 10px;
+    margin : 10px 0;
+    background: #EEEE;
+}
+
