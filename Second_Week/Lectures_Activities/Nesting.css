@@ -1,0 +1,9 @@
+p{
+    color: red;
+}
+div p{
+    color: green;
+}
+div .special{
+    color: blue;
+}
