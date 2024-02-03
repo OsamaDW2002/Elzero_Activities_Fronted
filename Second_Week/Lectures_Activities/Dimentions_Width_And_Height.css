@@ -1,0 +1,15 @@
+div{
+    background-color: red;
+    padding: 10px;
+    display: inline-block;
+    width: 400px; /* the text width doesn't exceed the width (400px)*/
+    min-width: 400px;/* the text width doesn't less than the width (400px) but it can exceed*/
+    max-width: 500px;
+
+
+    height: 40px; /* default value is auto */
+    min-height: 40px;
+    max-height: 50px;
+
+    width: fit-content;/* it will replace the inline block and the width */
+}
