@@ -1,0 +1,20 @@
+/*
+*Text Spacing
+*Letter Spacing
+*Identation
+*Line Height
+*Word Spacing + Wrapping + White Space
+*/
+div{
+    background-color: #f9f9f9;
+    letter-spacing: 10px;/*it can accepts the negative values */
+    text-indent: 20px;
+    line-height: 1.6;/*The best value*/
+    word-spacing: 20px;
+
+    width: 300px;/* text make a break line (calls white space) */
+    /*white-space: normal;!*default*!*/
+    /*white-space: nowrap; !*to cancel the white space*!*/
+    /*word-break: break-all;*/
+    word-break: break-word;
+}
