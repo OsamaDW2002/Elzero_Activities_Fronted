@@ -1,0 +1,19 @@
+/*
+*Text_Alignment
+*Alignment
+*Direction
+*Vertical Alignment
+*/
+div{
+    background-color: #a0a0a0;
+    text-align: center;
+    direction: rtl;/*Focus on the full stop in the site*/
+    vertical-align: top;
+}
+div img{
+    width: 50px;
+    height: 50px;
+    vertical-align: top; /*the text is align on the top of the image*/
+    /*try eeach on instead of top : bottom , center*/
+
+}
