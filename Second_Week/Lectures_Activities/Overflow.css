@@ -8,5 +8,8 @@ div{
     /*overflow-x: auto;*/
     /*overflow-y:auto ;*/
     overflow: auto; /* if the text is overflow then it puts the scroll sign else the scroll sign invisible */
-
+    text-overflow:ellipsis ;/*if theres an text overflow and i want to make it like that : Osama Mazen Sh...*/
+}
+div:hover{
+    overflow: visible;/*to make the all text shown when the mouse curser hover*/
 }
