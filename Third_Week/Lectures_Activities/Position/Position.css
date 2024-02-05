@@ -1,0 +1,28 @@
+/*
+*Position
+*Static => Default dont affect with top bottom left and right movement
+*Relative => moves relative of the element itself (its real position is reserved)
+*Absolute => the element is out of the workflow so its position is'nt reserved  and the moves are relative to the parent
+* (if we put bottom 0 and right 0 the dive will be on the bottom right to the parent) (if we want a child with pos absolute
+* dont make an overflow of his parent border we make the parent position relative)
+*Fixed => if we scroll on the element it still appear with its position the element move relative to the site even the parent's position
+* was relative
+*
+*Sticky => same as Fixed but when we scrolled on it it appears as on the top of the site or on any point we put (we declare the point
+* instruction after we make the position sticky)like
+*position : sticky
+*left: 0;
+*top : 20px;
+*/
+div{
+    color: white;
+    width: 100px;
+    padding: 10px;
+}
+.one{
+    background-color: red;
+    position: static;
+}
+.two{
+    background-color: green;
+}
