@@ -1,0 +1,10 @@
+button{
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer; /*to identify the client that this is a clickable element by changing the cursor style*/
+}
+p{
+    cursor: grab;/*using for drag and drop elements */
+}
