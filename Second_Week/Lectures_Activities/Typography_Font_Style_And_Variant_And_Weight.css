@@ -1,0 +1,18 @@
+/*
+*Font Style (rarely used)
+*Font Variant (rarely used)
+*Font Weight
+*/
+#TypographyFontStyleAndVariantAndWeight{
+font-style: italic;
+font-variant: small-caps;/*small-caps => makes all the chars small size but wrotes as capital letter*/
+font-weight: 700; /*from 100 -900 Blod weights*/
+/*or*/
+/*font-weight: bold;*/
+
+}
+
+/*if i wanna reset the header bold weight use normal instruction*/
+h3{
+    font-weight: normal;
+}
