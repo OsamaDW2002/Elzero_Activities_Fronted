@@ -1,0 +1,8 @@
+.One{
+    background-color: red;
+    opacity: 0.7;/*for all content not the background*/
+}
+.Two{
+    background-color: rgba(255,0,0,0.7);
+}
+/*الفرق انو الاولى كلشي تم زياده الشفافيه فيه على عكس التانيه فقط الخلفيه*/
