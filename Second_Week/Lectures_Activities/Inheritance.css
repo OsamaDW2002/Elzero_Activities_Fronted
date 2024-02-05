@@ -1,0 +1,28 @@
+body{
+    font-family: Arial , Helvetica , sans-serif;
+}
+/*all the child elements have a text align center otherwise no of the element has padding so there is an instruction that the parent could inherit it and there is not*/
+div{
+    text-align: center;
+    padding: 20px;
+    background-color: #EEE;
+    font-size: 20px;
+    border: red 20px solid;
+}
+
+/*when the child make instruction that it has previously inherited by the parent it takes it's own instruction not the inherited*/
+h3{
+    text-align: left;
+}
+
+/*if i want the p also has the parent border color we can inherit it manually*/
+p{
+    /*border: 4px dashed inherit;*/
+
+    /*border: inherit dashed inherit;  !*Wrong use case syntax error*!*/
+
+    /*border: inherit dashed blue;  it gives a syntax error so if we want to inherit the width we use the following steps :-*/
+    border:blue dashed ;
+    border-width: inherit;
+
+}
