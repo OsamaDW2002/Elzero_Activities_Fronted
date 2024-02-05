@@ -1,0 +1,22 @@
+/*uses in header bar with drop down list*/
+
+div{
+    padding: 10px;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+}
+.one{
+    background-color: red;
+    z-index: -1;
+}
+.two{
+    background-color: green;
+    z-index: 3;
+}
+.three{
+    background-color: blue;
+    z-index: 3;
+}
+/*if two div has the same z-index the last one in the html file will appear first*/
