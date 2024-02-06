@@ -1,0 +1,48 @@
+/*
+* Pseudo Classes
+*/
+.one{
+    background-color: red;
+    color: white ;
+}
+.two{
+    background-color: #EEE;
+    width: 100px;
+    height: 100px;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover{ /*pseudo class*/
+    color: red;
+}
+.ch:checked + label{
+    color: red;
+    /*Or make it unvisible if it checked*/
+    display: none;
+}
+a:visited{
+    color: blue;
+    text-decoration: none;
+}
+div:empty , p:empty{/*any empty div or p*/
+    border: 10px solid red;
+}
+:empty{/*any empty element*/
+    border: 10px solid red;
+}
+
+
+p{
+    background-color: #EEE;
+    width: 100px;
+    height: 100px;
+}
+.in{
+    border: 2px solid black;
+}
+.in:focus{ /*when we select the text to type*/
+    border-color:red;
+    outline: none;
+}
