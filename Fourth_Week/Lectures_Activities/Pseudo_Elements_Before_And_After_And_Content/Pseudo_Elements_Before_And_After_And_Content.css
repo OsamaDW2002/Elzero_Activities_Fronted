@@ -1,6 +1,9 @@
 .parent {
     margin-bottom: 20px;
     overflow: hidden;
+
+    /*part two*/
+    counter-increment: member-counter;/* you can choose any name */
 }
 .one {
     background-color: #eee;
@@ -10,27 +13,54 @@
     position: relative;
 }
 .one::after{
-    content:"";/*you must put it to make the design visible even its empty*/
+    /*content:"";!*you must put it to make the design visible even its empty*!*/
+    /*first part*/
+    /*position: absolute;*/
+    /*width: 5px;*/
+    /*height: 100%;*/
+    /*right:-10px;*/
+    /*top: 0;*/
+    /*background-color: #f44336;*/
+
+    /*second part (counter)*/
+
+    content: counter(member-counter);
     position: absolute;
-    width: 5px;
-    height: 100%;
-    right:-10px;
-    top: 0;
     background-color: #f44336;
-}
-.one::before{
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: transparent;
-    position: absolute;
-    left: -20px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-weight: 600;
+    text-align: center;
+    right: -10px;
     top: 50%;
     margin-top: -10px;
-    border-width: 10px ;
-    border-style: solid;
-    border-color: transparent green transparent transparent;
 }
+.one::before{
+    /*first part*/
+    /*content: "";*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*background-color: transparent;*/
+    /*position: absolute;*/
+    /*left: -20px;*/
+    /*top: 50%;*/
+    /*margin-top: -10px;*/
+    /*border-width: 10px ;*/
+    /*border-style: solid;*/
+    /*border-color: transparent green transparent transparent;*/
+
+     /*content: url("");!*dont use it*!       */
+
+    /*!*attribute part*!*/
+    /*content: attr(data-text);*/
+    /*display: none;*/
+}
+/*!* for attribute part*!*/
+/*.one:hover::before{*/
+/*    display: block;*/
+/*}*/
+
 .user {
     background-color: #eee;
     width: 50px;
@@ -43,4 +73,25 @@
 }
 hr{
     margin:20px 0;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    position: relative;
+}
+ul li::before{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px ;
+    border-style: solid;
+    border-color: transparent transparent transparent green;
+
 }
