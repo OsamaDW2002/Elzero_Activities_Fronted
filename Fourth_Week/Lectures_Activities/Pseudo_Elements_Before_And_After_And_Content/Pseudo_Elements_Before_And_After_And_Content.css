@@ -1,0 +1,46 @@
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.one {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+.one::after{
+    content:"";/*you must put it to make the design visible even its empty*/
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right:-10px;
+    top: 0;
+    background-color: #f44336;
+}
+.one::before{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px ;
+    border-style: solid;
+    border-color: transparent green transparent transparent;
+}
+.user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+hr{
+    margin:20px 0;
+}
