@@ -1,0 +1,26 @@
+/*
+*Pseudo class .class:Pseudo class
+*Pseudo element .class::Pseudo element
+*/
+.one span{ /*nor a good practical solution you can replace this answer with psuedo element in CSS*/
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+/*the best solution :-*/
+.two::first-letter{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+.three:first-line{/*first line in my view port*/
+    color: green;
+    font-weight: 800;
+}
+::selection{/*default blue*/
+    background-color: #f44336;
+}
