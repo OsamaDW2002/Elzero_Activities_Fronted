@@ -1,0 +1,12 @@
+/*
+* !important flag
+*/
+
+.one {
+    /*remove the important and check the difference*/
+    background-color: #EEE !important; /*there is an inline CSS command check it out*/
+}
+
+.one{
+    background-color: blue;
+}
