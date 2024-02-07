@@ -1,0 +1,54 @@
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    /*flex-direction: column;*/
+    /*benefits : if the flex-direction is row and we are going to change the direction into arabic the flex-direction automatic will start from right to left*/
+    /*the flex-direction manipulate the float problem if we will change the direction in the float we need to return back ro the code and change the float from left to right*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column-reverse;*/
+    flex-wrap: nowrap;/*default to make the row dynamically change div widths to make all of them fit in the row without wrapping to the next line */
+    flex-wrap: wrap;/*it does'nt allow to change the element widths so the extra element will be wrap to the next line*/
+    flex-wrap: wrap-reverse;/*make the last element in the first line and the rest in the second*/
+
+
+    flex-flow:row wrap ;/*flex-direction  flex-wrap*/
+}
+.flex div {
+    background-color: #f00;
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+.float {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.float div {
+    background-color: #f00;
+    color: white;
+    float: right;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
