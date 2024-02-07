@@ -5,6 +5,8 @@
   - flex-direction: row => Default Value
   - flex-wrap: nowrap => Default Value
   - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  ---
+  - justify-content: flex-start => Default Value
 */
 
 * {
@@ -29,7 +31,20 @@
 
 
     flex-flow:row wrap ;/*flex-direction  flex-wrap*/
+
+
+    justify-content: flex-start; /*default*/
+    justify-content: flex-end;/*the wrap element will show at the end of line (the end of the last wrap element will start at the end of line)*/
+    /*try to add more elements to the flex container*/
+    justify-content: center;
+
+
+    justify-content: space-between;/*edit the width to realize the benefit*/
+    justify-content: space-around;
+    justify-content: space-evenly;/*space-between  +  space-around*/
 }
+
+
 .flex div {
     background-color: #f00;
     color: white;
