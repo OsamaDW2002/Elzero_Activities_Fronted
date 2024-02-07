@@ -8,6 +8,7 @@
   ---
   - justify-content: flex-start => Default Value
   - align-items(vertically): stretch => Default Value
+  - align-content: stretch => Default Value , it distribute the contents to the site vertically (with stretches)
 */
 
 * {
@@ -50,6 +51,15 @@
     align-items: flex-end;
     align-items: flex-start;
     align-items: center;
+
+
+    align-content: stretch;
+    align-content: flex-start;/*all the contents will be at the top of parent regardless the parent height*/
+    align-content: flex-end;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+
 }
 
 
