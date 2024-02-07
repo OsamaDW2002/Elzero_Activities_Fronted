@@ -1,0 +1,35 @@
+/*
+*Transition
+**Duration
+**Property
+**Delay
+**Timing - Function
+*instructions that support animation and Transition : https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+*/
+* {
+    box-sizing: border-box;
+}
+.one{
+    background-color: #EEE;
+    width: 200px;
+    height: 100px;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    /*transition-property: margin-left, margin-top;*/
+    transition-property: all;
+    /*default value ease*//*speed controler in every time stamp*/
+    transition-timing-function: linear;
+    transition-timing-function: ease-in;/*just starts slow then linear*/
+    transition-timing-function: ease-out;/*just ends slow */
+    transition-timing-function: ease-in-out;/* start and end slow there is no fast in the middle*/
+
+    transition: width 1s ,height 3s;/*property duration timing-function delay*//*defaults all 0 ease 0*/
+
+    transition-duration: 1s, 2s ;/*for width and height*/
+}
+.one:hover{
+    /*margin-left:20px;*/
+    /*margin-top:20px;*/
+    width: 290px;
+    height: 300px;
+}
