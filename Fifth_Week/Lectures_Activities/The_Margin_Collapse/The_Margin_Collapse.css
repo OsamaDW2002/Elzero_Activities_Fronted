@@ -1,0 +1,39 @@
+/*
+  The Margin Collapse: if we had two elements vertically and the up has margin top and the down has margin bottom only the highest margin will be implement and the another will be canceled (collapse)
+  [1] Only Vertical Margin Collapse
+  [2] Bigger Margin Wins
+  [3] Margin Collapsing happens With Elements Without Any elements Between if theres an element between so the the collapsing never happens
+  [4] Nesting Does Not Prevent Collapse (element nesting in a parent and the other one is outside the parent)
+*/
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+.parent .one,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.one {
+    background-color: #ddd;
+}
+.two {
+    background-color: #aaa;
+}
+.up {
+    background-color: red;
+    color: white;
+    height: 80px;
+    margin-bottom: 40px;
+}
+.down {
+    background-color: green;
+    color: white;
+    height: 80px;
+    margin-top: 40px;
+}
