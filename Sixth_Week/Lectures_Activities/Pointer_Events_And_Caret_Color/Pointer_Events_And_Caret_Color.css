@@ -1,0 +1,6 @@
+input {
+    caret-color: red;
+}
+a {
+    pointer-events: none;/*cancel any event from the element*/
+}
