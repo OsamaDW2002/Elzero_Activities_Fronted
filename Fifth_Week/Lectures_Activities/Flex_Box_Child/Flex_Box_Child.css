@@ -15,7 +15,7 @@
   - flex-basis: auto => Default Value
   - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
   - Display : inline-flex
-
+  - align-self: auto => Default Value
 */
 
 * {
@@ -26,6 +26,7 @@
 .flex {
     background-color: #eee;
     width: 800px;
+    height: 700px;
     padding: 20px;
     margin: 20px auto;
     display: flex;
@@ -45,4 +46,9 @@
     /*flex-basis doesnt affect on the absolute elements position*/
     /*flex-basis respect max-width*/
     flex: 0 1 auto ;/*flex-grow flex-shrink flex-basis 0 1 Auto*/
+
+}
+.two{
+    /*align-self: auto;*/
+    align-self: center; /*flex-start , flex-end*/
 }
