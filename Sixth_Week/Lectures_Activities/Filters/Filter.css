@@ -1,0 +1,18 @@
+/*
+  Filters
+*/
+
+* {
+    box-sizing: border-box;
+}
+img {
+    transition: 0.3s;
+    filter: grayscale(100%);
+    filter: blur(4px);
+    filter: invert(400%);
+}
+img:hover {
+    filter: grayscale(0);
+    filter: blur(0);
+    filter: invert(0);
+}
