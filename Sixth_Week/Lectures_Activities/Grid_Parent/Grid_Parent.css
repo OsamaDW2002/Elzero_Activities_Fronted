@@ -5,6 +5,8 @@
   - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Repeat]
   - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
   - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
 */
 
 * {
@@ -16,10 +18,13 @@
     height: 500px;
     background-color: #ddd;
     display: grid;
-    grid-template-columns: repeat(2, auto) repeat(2, 1fr);/*fraction is greedy but the auto is shy(takes the area base on the auto element content)*/
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-template-columns: repeat(4, auto);/*fraction is greedy but the auto is shy(takes the area base on the auto element content)*/
     /* row-gap: 10px;
       column-gap: 10px; */
     gap: 10px 10px;/*row-gap column-gap*/
+    justify-content: space-around;
+    align-content: space-around;
 }
 .parent div {
     background-color: red;
