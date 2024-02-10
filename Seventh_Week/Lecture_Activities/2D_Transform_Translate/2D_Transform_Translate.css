@@ -1,0 +1,18 @@
+/*
+* why translate is better than position for moving ? check this URL https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/
+*
+*
+*/
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: translate(-100px, 100px);
+}
