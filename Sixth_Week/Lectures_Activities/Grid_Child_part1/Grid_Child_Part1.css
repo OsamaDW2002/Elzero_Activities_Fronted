@@ -50,7 +50,7 @@
 
 
 
-/**/
+/*Grid - Child - Grid Area And Trainings*/
 .parent .nine1{
     background-color: green;
     grid-row-start: 2;
@@ -60,3 +60,4 @@
     /*OR*/
     grid-area: 2 / 2 / 5 / 6;
 }
+
