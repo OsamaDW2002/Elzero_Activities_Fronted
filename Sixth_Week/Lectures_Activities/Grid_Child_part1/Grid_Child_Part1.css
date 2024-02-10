@@ -1,0 +1,43 @@
+/*
+*  Grid
+*  Parent
+*  - display: grid | inline-grid
+*  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+*  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+*  - gap: [Row Gap] [Column Gap]
+*  - justify-content
+* - align-content
+*  - grid-template-areas
+*  Child
+*  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+*  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+*/
+
+* {
+    box-sizing: border-box;
+}
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.parent .four2{
+    grid-column: span 3;/*like colspan in html */
+}
+.parent .one1{
+    grid-row: 1 / 5;/*if i put 6 instead of 5 the grid will add a new row (grid column is the same) */
+    /*grid-row: 1/span 5;*//*use span due to its the best and dont mess the columns/rows when you add 6 instead of 5 like the above instruction*/
+}
