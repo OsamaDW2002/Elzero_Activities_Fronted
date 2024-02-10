@@ -1,0 +1,16 @@
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: rotateX(50deg);/*90deg the element will be disappear*/
+    transform: rotateY(50deg);/*90deg the element will be disappear*/
+    transform: rotateZ(50deg);/*like rotate()*/
+    transform: rotate3d(0, 1, 1, 65deg);/*zero to cancel the dimension rotate (in this ex. we canceled the X-dimension rotate)*/
+}
