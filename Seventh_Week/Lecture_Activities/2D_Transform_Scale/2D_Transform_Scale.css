@@ -1,0 +1,17 @@
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: scaleX(1.5);
+    transform: scaleY(2);/*scale the width ,the text inside , margin and so on   */
+    transform: scale(2, 2); /*if you put a single number for X and Y*/
+    transform: scale(-1.5);/*Flip the container then scaling*/
+    transition: 1s;
+}
