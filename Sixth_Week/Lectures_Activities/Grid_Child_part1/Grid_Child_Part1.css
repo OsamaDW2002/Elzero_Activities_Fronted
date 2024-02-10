@@ -11,6 +11,7 @@
 *  Child
 *  - grid-column: [Grid-Column-Start] [Grid-Column-End]
 *  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+*  - grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
 */
 
 * {
@@ -34,10 +35,28 @@
     font-weight: bold;
     text-align: center;
 }
-.parent .four2{
-    grid-column: span 3;/*like colspan in html */
-}
-.parent .one1{
-    grid-row: 1 / 5;/*if i put 6 instead of 5 the grid will add a new row (grid column is the same) */
-    /*grid-row: 1/span 5;*//*use span due to its the best and dont mess the columns/rows when you add 6 instead of 5 like the above instruction*/
+
+/*Grid - Child - Grid Column And Grid Row:-*/
+/*.parent .four2{*/
+/*    grid-column: span 3;!*like colspan in html *!*/
+/*}*/
+/*.parent .one1{*/
+/*    grid-row: 1 / 5;!*if i put 6 instead of 5 the grid will add a new row (grid column is the same) *!*/
+/*    !*grid-row: 1/span 5;*!!*use span due to its the best and dont mess the columns/rows when you add 6 instead of 5 like the above instruction*!*/
+/*}*/
+/*.parent .eight1{*/
+/*    grid-row: span 2*/
+/*}*/
+
+
+
+/**/
+.parent .nine1{
+    background-color: green;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 6;
+    /*OR*/
+    grid-area: 2 / 2 / 5 / 6;
 }
