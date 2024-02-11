@@ -1,0 +1,57 @@
+/*
+  Animation
+  - Iteration Count
+  - Timing Function
+  - Spinner Loading
+*/
+/*
+*search about cubic-bezier
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #e8e3e3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    animation-name: coloring;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: reverse;/*default value => normal*/
+    /*animation-direction:alternate ;!*start from point and return reverse to the origin*!*/
+    /*animation-direction: alternate-reverse; !*start reverse then forwarding*!*/
+    animation-delay: -2s;/*continue after 2s  (in this case the duration is 5 so the animation will start from 2)*/
+    animation-fill-mode: both;/*default value => none after the end of the animation the element returns into its original color*/
+    /*animation-fill-mode: forwards;!*after the end of the animation the element returns into last keyframe color*!*/
+    /*animation-fill-mode: backwards;!*after the end of the animation the element returns into first keyframe color (in our example it will take the first color)*!*/
+    /*animation-fill-mode: both;!*after the end of the animation the element returns into its last frame color whether its forward or backward*!*/
+    animation-play-state: running;/*default value*/
+    /*animation-play-state: paused ;!*it uses when i want if the mouse cursing the animation the animation will stop*!*/
+    animation: coloring 3s linear 2s infinite reverse;/*name duration timing-function delay iteration direction*/
+
+}
+div:hover {
+    animation-play-state: paused;
+}
+@keyframes coloring {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: black;
+    }
+}
