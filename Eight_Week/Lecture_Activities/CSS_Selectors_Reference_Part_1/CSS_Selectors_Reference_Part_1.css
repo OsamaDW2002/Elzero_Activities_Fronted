@@ -1,0 +1,21 @@
+/*
+  CSS Selectors
+  - *
+  - Element => [p, div, h2]
+  - Element OtherElement => div p  (theres a possible that some element between them)
+  - .class-name
+  - #id-name
+  - .parent .child    (there is a possible that some class between them)
+  - .class-one.class-two  (element that has the two classes)
+  - .class-name div, .class-name p  (there is a possible that some class between them)
+  - Element.class-name => p.class-name (only p that has this class name)
+  - .parent > .child => Direct Child (there is no possible that some class between them)(just my son )
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
