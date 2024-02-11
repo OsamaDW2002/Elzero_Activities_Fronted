@@ -1,0 +1,26 @@
+/*
+  CSS Selectors
+  - Element + Other Element => [div + p] div after it there is a p(no elements between them)
+  - Element ~ Other Elements => [p ~ div] just child of this element(parent p and there children is div)
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word (not in sub word)
+  - [Attribute*=Value] => Contains A String (contain a sub word)
+  - [Attribute^=Value] => Start With A String ()
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div + p{
+    color: blue;
+}
+p + p{
+    color: #f44336;
+}
