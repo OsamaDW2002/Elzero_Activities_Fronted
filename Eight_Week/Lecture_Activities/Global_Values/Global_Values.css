@@ -1,0 +1,25 @@
+/*
+  CSS Global Values
+  - inherit
+  - initial => to the default value(like display :: initial means inline or color : initial means black)
+  - unset => if the element has a parent so the instruction value is inherit from its parent , otherwise if it has'nt parent so the instruction value is initial
+  --- If Inherit => inherit
+  --- If Not => initial
+  - revert CSS Level [4] => like initial user-agent value
+  - all => means all the instruction is unset , initial or inherit
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+div {
+    /*all: inherit;*/
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid black;
+}
