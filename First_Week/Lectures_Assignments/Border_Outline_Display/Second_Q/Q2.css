@@ -1,0 +1,25 @@
+.element{
+    width: 400px;
+    padding: 20px;
+    padding-left: 5px;
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+    outline:15px solid #EEEEEE;
+    height: 10px;
+    font-weight: 600;
+}
+.element-1{
+    visibility: hidden;
+}
+.element-2{
+    position: relative;
+    border-left: 5px solid #ff0055;
+    left: 30px;
+}
+
+.element-3{
+    border-left: 5px solid turquoise;
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
