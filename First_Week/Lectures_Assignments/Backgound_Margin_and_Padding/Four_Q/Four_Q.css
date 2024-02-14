@@ -1,0 +1,28 @@
+div{
+    width: 400px;
+    height: 400px;
+    background-image:url("Q4.png") ;
+    color: white;
+    background-color: #a0a0a0;
+}
+.assign-4-shape-1{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 80% 80%;
+}
+.assign-4-shape-2{
+    color: blueviolet;
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size:75% 100%;
+}
+.assign-4-shape-3{
+    color: #a942ad;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 100% 75%;
+}
+.assign-4-shape-4{
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
