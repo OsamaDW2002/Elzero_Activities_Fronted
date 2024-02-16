@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(70 163 153);
+    width: 120px;
+    padding:    20px;
+    color: white;
+    border-bottom:9px rgb(42, 103, 98) solid;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+}
