@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+div:nth-child(1){
+    font-family: "Open Sans" ;
+    font-weight: 300;
+    font-style: italic;
+}
+div:nth-child(2) {
+    font-family: "Cairo";
+    font-weight: 700 ;
+}
+div:nth-child(3) {
+    font-family: "Jomhuria" ;
+    font-weight: 400;
+}
