@@ -1,0 +1,31 @@
+.parent{
+    width: 800px;
+    background-color: #EEEEEE;
+    /*padding: 10px;*/
+}
+.parent div{
+    margin: 15px 0 0 15px;
+    float: left;
+    background-color: #a0a0a0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 50px;
+}
+.one{
+    width: calc(100% - 30px);
+}
+.two{
+    width: calc((100%/3 - 20px));
+}
+.three{
+    width: calc(100%/2 - 23px);
+}
+div .four {
+    width: calc(100%/4 - 19px);
+    margin-bottom: 15px;
+}
+.parent p{
+    clear: both;
+}

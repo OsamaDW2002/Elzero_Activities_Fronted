@@ -1,0 +1,14 @@
+div{
+    padding: 20px;
+    border: #f44336 solid 3px;
+    width: 50%;
+}
+div p{
+    margin: 0;
+    font-family:  sans-serif;
+    background-color: #EEEEEE;
+    padding: inherit;
+    border: inherit;
+    display: flex;
+    justify-content: center;
+}
