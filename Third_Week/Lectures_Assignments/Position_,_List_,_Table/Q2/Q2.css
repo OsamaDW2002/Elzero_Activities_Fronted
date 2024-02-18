@@ -1,0 +1,48 @@
+:root{
+    --mainColor: #2e9ee0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+div{
+    width: 400px;
+    background-color: #EEEEEE;
+    padding: 20px;
+    line-height: 1.7;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: relative;
+    border:3px solid ;
+    border-color: #f44336 #2980b9;
+}
+.top-left , .top-right ,.bottom-left , .bottom-right{
+    background-color: var(--mainColor);
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.top-left{
+   top:-10px;
+}
+.top-right{
+    bottom: 160px;
+}
+.bottom-left{
+    top:160px;
+}
+.bottom-right{
+    top: 160px;
+}
+.top-left , .bottom-left{
+    left: -20px;
+    border-right: 4px solid #f44336;
+}
+.top-right , .bottom-right{
+    right: -20px;
+    border-left: 4px solid #f44336;
+}
