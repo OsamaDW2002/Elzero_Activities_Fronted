@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+}
+p{
+    counter-increment: member-counter;
+    background-color: #EEEEEE;
+    font-family: sans-serif;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    text-align: center;
+    height: 30px;
+    position: relative;
+}
+p::before{
+    content: counter(member-counter);
+    position: absolute;
+    background-color: #f44336;
+    width: 40px;
+    height: 30px;
+    padding-top: 10px;
+    bottom: 1px;
+    color: white;
+    left: 0;
+}
+p::after{
+    content:"";
+    position: absolute;
+    background-color: #f44336;
+    width: 4px;
+    height: 30px;
+    padding-top: 10px;
+    bottom: 1px;
+    color: white;
+    right: 0;
+}
